@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "AKIAUWHF2O344WA5NVP2"
-  secret_key = "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"
+  access_key = "******"
+  secret_key = "*******"
   region     = "us-east-2"
 }
 
@@ -11,7 +11,7 @@ resource "aws_eks_cluster" "my_cluster" {
   role_arn = "arn:aws:iam::322604529401:role/eksClusterRole"
 
   vpc_config {
-    subnet_ids = ["subnet-0d750807f1129064b", "subnet-017d26d831c71cbb7", "subnet-04bc3799bc65941b0"]
+    subnet_ids = ["subnet-***", "subnet-***", "subnet-***"]
   }
 
   /*depends_on = [
